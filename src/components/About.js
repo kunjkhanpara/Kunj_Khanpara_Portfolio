@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";  // Import Link from react-router-dom
 import "./About.css";
 
 function About() {
@@ -17,7 +18,7 @@ function About() {
           and enhance my skills by contributing to innovative and challenging projects.
         </p>
         <p>
-          For more details or to connect with me, please visit the <a href="/contact" className="link">Contact Page</a>.
+          For more details or to connect with me, please visit the <Link to="/contact" className="link">Contact Page</Link>.
         </p>
       </div>
     </div>

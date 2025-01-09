@@ -17,7 +17,7 @@ function Contact() {
           className="contact-link"
         >
           <FaEnvelope className="contact-icon" />
-          <span>Email: kunjpatel4647@gmail.com</span>
+          <span> kunjpatel4647@gmail.com</span>
         </a>
         <a
           href="https://github.com/kunjkhanpara"
@@ -38,7 +38,7 @@ function Contact() {
           <span>Instagram</span>
         </a>
         <a
-          href="https://www.linkedin.com/in/kunjkhanpara"
+          href="https://www.linkedin.com/in/kunj-khanpara/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
