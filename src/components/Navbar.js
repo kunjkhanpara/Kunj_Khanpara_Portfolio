@@ -47,6 +47,11 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link to="/resume" onClick={() => setMobileMenuOpen(false)}>
+                Resume
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
