@@ -1,0 +1,11 @@
+/* Footer container */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  background: linear-gradient(to right, #465e85, #586a92); /* Matching navbar */
+  color: #ffffff; /* White text for contrast */
+  font-size: 0.9rem;
+  height: 25px; /* Compact but visible */
+}

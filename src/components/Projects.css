@@ -1,0 +1,12 @@
+.projects {
+    padding: 50px;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
