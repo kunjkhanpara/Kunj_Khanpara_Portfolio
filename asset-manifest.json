@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Kunj_Khanpara_Portfolio/static/css/main.f0903f85.css",
+    "main.js": "/Kunj_Khanpara_Portfolio/static/js/main.02f3dd42.js",
+    "static/js/488.9561f9b8.chunk.js": "/Kunj_Khanpara_Portfolio/static/js/488.9561f9b8.chunk.js",
+    "static/media/2.jpg": "/Kunj_Khanpara_Portfolio/static/media/2.4a66df7b7c4d4faa48b4.jpg",
+    "index.html": "/Kunj_Khanpara_Portfolio/index.html",
+    "main.f0903f85.css.map": "/Kunj_Khanpara_Portfolio/static/css/main.f0903f85.css.map",
+    "main.02f3dd42.js.map": "/Kunj_Khanpara_Portfolio/static/js/main.02f3dd42.js.map",
+    "488.9561f9b8.chunk.js.map": "/Kunj_Khanpara_Portfolio/static/js/488.9561f9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0903f85.css",
+    "static/js/main.02f3dd42.js"
+  ]
+}
