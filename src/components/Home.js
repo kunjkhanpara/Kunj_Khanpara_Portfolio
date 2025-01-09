@@ -3,7 +3,8 @@ import "./Home.css";
 
 function Home() {
   const [role, setRole] = useState("Web Developer");
-  const [nameColor, setNameColor] = useState("#f1f1f1"); // Default color
+  const [nameColor, setNameColor] = useState("#f1f1f1");
+  const [currentImage, setCurrentImage] = useState("8.jpg");
 
   // Toggle the role text every 5 seconds
   useEffect(() => {
@@ -29,13 +30,30 @@ function Home() {
     return () => clearInterval(nameInterval);
   }, []);
 
+  // Change profile image every 6 seconds
+  useEffect(() => {
+    const imageInterval = setInterval(() => {
+      setCurrentImage((prevImage) => {
+        if (prevImage === "8.jpg") return "2.jpg";
+        if (prevImage === "2.jpg") return "6.jpg";
+        return "8.jpg";
+      });
+    }, 6000);
+
+    return () => clearInterval(imageInterval);
+  }, []);
+
   return (
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-content">
           {/* Left Side: Profile Image */}
           <div className="image-container">
-            <img src={require("./2.jpg")} alt="Profile" className="profile-image" />
+            <img
+              src={require(`./${currentImage}`)}
+              alt="Profile"
+              className="profile-image"
+            />
           </div>
 
           {/* Right Side: Text Content */}
