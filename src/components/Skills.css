@@ -1,28 +1,76 @@
 .skills {
-    padding: 50px;
-    background: #fff;
-    text-align: center;
-  }
-  .skills h2 {
+  padding: 50px;
+  background: linear-gradient(to bottom, #e0eafc, #374e6d);
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.skills-header {
+  margin-bottom: 30px;
+}
+
+.skills-header h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #0a4d68; /* Deep teal to complement the background */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.skills-header p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #3f424d; /* Soft pastel blue for subtle contrast */
+}
+
+.skills-icons {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #15193cea; /* Aqua color matching the background gradient */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  color: #2af598; /* Lighter aqua-green for hover effect */
+  transform: scale(1.2);
+}
+
+.icon-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff; /* White for the skill names */
+}
+
+@media (max-width: 768px) {
+  .skills-header h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
   }
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  .skill-item {
-    background: #004e92;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
+
+  .skills-header p {
     font-size: 1rem;
-    transition: transform 0.3s;
   }
-  .skill-item:hover {
-    transform: scale(1.1);
-    background: #ffa726;
+
+  .icon {
+    font-size: 2.5rem;
   }
-  
+}
