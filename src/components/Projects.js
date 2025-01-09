@@ -7,6 +7,7 @@ function Projects() {
       <h2>My Projects</h2>
       <div className="maintenance-message">
         <p>Page is Under Maintenance</p>
+        <div className="loading-spinner"></div>
       </div>
       {/* <div className="project-list">
         <ProjectCard
