@@ -3,37 +3,6 @@
   background: #f4f4f4;
   text-align: center;
 }
-
-.maintenance-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  font-size: 24px;
-  color: #333;
-  font-weight: bold;
-}
-
-.loading-spinner {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1.5s linear infinite;
-  margin-top: 20px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
