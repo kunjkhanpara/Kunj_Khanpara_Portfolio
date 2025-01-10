@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kunj_Khanpara_Portfolio/static/css/main.4b800242.css",
-    "main.js": "/Kunj_Khanpara_Portfolio/static/js/main.7877df09.js",
+    "main.css": "/Kunj_Khanpara_Portfolio/static/css/main.420524f3.css",
+    "main.js": "/Kunj_Khanpara_Portfolio/static/js/main.de0c3ac6.js",
     "static/js/488.9561f9b8.chunk.js": "/Kunj_Khanpara_Portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/4.jpg": "/Kunj_Khanpara_Portfolio/static/media/4.13bf126563f7710e648d.jpg",
     "static/media/6.jpg": "/Kunj_Khanpara_Portfolio/static/media/6.2e3045e475f24380e7fb.jpg",
@@ -12,12 +12,12 @@
     "static/media/1.jpg": "/Kunj_Khanpara_Portfolio/static/media/1.13971b6056121898bb04.jpg",
     "static/media/8.jpg": "/Kunj_Khanpara_Portfolio/static/media/8.07d1cd3848af6730bf7b.jpg",
     "index.html": "/Kunj_Khanpara_Portfolio/index.html",
-    "main.4b800242.css.map": "/Kunj_Khanpara_Portfolio/static/css/main.4b800242.css.map",
-    "main.7877df09.js.map": "/Kunj_Khanpara_Portfolio/static/js/main.7877df09.js.map",
+    "main.420524f3.css.map": "/Kunj_Khanpara_Portfolio/static/css/main.420524f3.css.map",
+    "main.de0c3ac6.js.map": "/Kunj_Khanpara_Portfolio/static/js/main.de0c3ac6.js.map",
     "488.9561f9b8.chunk.js.map": "/Kunj_Khanpara_Portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b800242.css",
-    "static/js/main.7877df09.js"
+    "static/css/main.420524f3.css",
+    "static/js/main.de0c3ac6.js"
   ]
 }
