@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
 
-function ProjectCard({ title, points, githubLink, liveLink }) {
+function ProjectCard({ title, points, githubLink, liveLink, onClickLiveLink }) {
   return (
     <div className="project-card">
       <h3>{title}</h3>
@@ -14,7 +14,13 @@ function ProjectCard({ title, points, githubLink, liveLink }) {
         View on GitHub
       </a>
       {liveLink && (
-        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="live-link">
+        <a
+          href={liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="live-link"
+          onClick={onClickLiveLink}
+        >
           Try Live Website
         </a>
       )}

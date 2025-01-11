@@ -3,6 +3,13 @@ import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 
 function Projects() {
+  // Define the handleLiveLinkClick function
+  const handleLiveLinkClick = (projectTitle) => {
+    if (projectTitle === "Digital Resume Builder") {
+      alert("Live website not available for this project, but I will update soon.");
+    }
+  };
+
   return (
     <div className="projects">
       <h2>My Projects</h2>
@@ -26,8 +33,9 @@ function Projects() {
           ]}
           githubLink="https://github.com/kunjkhanpara/Digital-Resume-Builder"
           liveLink="#"
+          onClickLiveLink={() => handleLiveLinkClick("Digital Resume Builder")}
         />
-                <ProjectCard
+        <ProjectCard
           title="Tic-Tac-Toe-Game"
           points={[
             "Classic tic-tac-toe game for two players",
@@ -37,7 +45,7 @@ function Projects() {
           githubLink="https://github.com/kunjkhanpara/Tic-Tac-Toe-Game"
           liveLink="https://kunjkhanpara.github.io/Tic-Tac-Toe-Game/"
         />
-                <ProjectCard
+        <ProjectCard
           title="Weather-Application-Using-API-Key"
           points={[
             "Weather app providing real-time weather updates",
@@ -47,7 +55,7 @@ function Projects() {
           githubLink="https://github.com/kunjkhanpara/Weather-Application-Using-API-Key"
           liveLink="https://kunjkhanpara.github.io/Weather-Application-Using-API-Key/"
         />
-                <ProjectCard
+        <ProjectCard
           title="Shopping-Cart"
           points={[
             "Add, edit, or remove items in the cart.",
