@@ -24,7 +24,7 @@ function Projects() {
             "Real-time preview for seamless editing",
             "Download resumes as PDF instantly"
           ]}
-          githubLink="https://github.com/kunjkhanpara/digital_resume_builder"
+          githubLink="https://github.com/kunjkhanpara/Digital-Resume-Builder"
           liveLink="#"
         />
                 <ProjectCard
