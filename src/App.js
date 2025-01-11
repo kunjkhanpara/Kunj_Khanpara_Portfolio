@@ -7,7 +7,8 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Resume from "./components/Resume"; // Import the Resume component
+import Resume from "./components/Resume";
+import Education from "./components/Education"; // Import Education
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} /> {/* Added Resume route */}
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/education" element={<Education />} /> {/* Added Education */}
       </Routes>
       <Footer />
     </Router>

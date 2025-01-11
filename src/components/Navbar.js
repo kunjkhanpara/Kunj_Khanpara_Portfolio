@@ -43,6 +43,11 @@ function Navbar() {
               </Link>
             </li>
             <li>
+              <Link to="/education" onClick={() => setMobileMenuOpen(false)}>
+                Education
+              </Link>
+            </li>
+            <li>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 Contact
               </Link>
@@ -52,6 +57,7 @@ function Navbar() {
                 Resume
               </Link>
             </li>
+           
           </ul>
         </div>
       </div>

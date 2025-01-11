@@ -43,7 +43,7 @@
 }
 
 .navbar-links li {
-  margin: 0;
+  margin: -3px;
 }
 
 .navbar-links a {

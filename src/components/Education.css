@@ -1,0 +1,114 @@
+.education-page {
+    background: linear-gradient(to bottom, #e0eafc, #374e6d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 20px;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+  }
+  
+  .education-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .education-card {
+    background: #222e3a;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .education-degree {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ecf0f1;
+    margin-bottom: 12px;
+  }
+  
+  .education-institution {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-style: italic;
+    color: #bdc3c7;
+  }
+  
+  .education-duration {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #bbdfe2;
+  }
+  
+  .education-details {
+    font-size: 1rem;
+    color: #bbdfe2;
+  }
+  
+  @media (max-width: 768px) {
+    .education-title {
+      font-size: 2.5rem;
+    }
+  
+    .education-container {
+      width: 90%;
+    }
+  
+    .education-card {
+      padding: 20px;
+    }
+  
+    .education-degree {
+      font-size: 1.6rem;
+    }
+  
+    .education-institution,
+    .education-duration,
+    .education-details {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .education-title {
+      font-size: 2rem;
+    }
+  
+    .education-container {
+      width: 95%;
+    }
+  
+    .education-card {
+      padding: 15px;
+    }
+  
+    .education-degree {
+      font-size: 1.4rem;
+    }
+  
+    .education-institution,
+    .education-duration,
+    .education-details {
+      font-size: 0.9rem;
+    }
+  }
+  
