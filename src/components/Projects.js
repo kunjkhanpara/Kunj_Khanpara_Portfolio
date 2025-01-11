@@ -4,7 +4,8 @@ import "./Projects.css";
 
 function Projects() {
   // Define the handleLiveLinkClick function
-  const handleLiveLinkClick = (projectTitle) => {
+  const handleLiveLinkClick = (e, projectTitle) => {
+    e.preventDefault(); // Prevent the default behavior (opening the link in a new tab)
     if (projectTitle === "Digital Resume Builder") {
       alert("Live website not available for this project, but I will update soon.");
     }
@@ -33,7 +34,7 @@ function Projects() {
           ]}
           githubLink="https://github.com/kunjkhanpara/Digital-Resume-Builder"
           liveLink="#"
-          onClickLiveLink={() => handleLiveLinkClick("Digital Resume Builder")}
+          onClickLiveLink={(e) => handleLiveLinkClick(e, "Digital Resume Builder")}
         />
         <ProjectCard
           title="Tic-Tac-Toe-Game"
