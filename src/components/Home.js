@@ -4,9 +4,7 @@ import "./Home.css";
 function Home() {
   const [role, setRole] = useState("Web Developer");
   const [nameColor, setNameColor] = useState("#f1f1f1");
-  const [currentImage, setCurrentImage] = useState("8.jpg");
 
-  // Toggle the role text every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setRole((prevRole) =>
@@ -17,46 +15,29 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // Change name color every 5 seconds
   useEffect(() => {
     const nameInterval = setInterval(() => {
       setNameColor((prevColor) => {
-        if (prevColor === "#f1f1f1") return "#3f51b5"; // Blue
-        if (prevColor === "#3f51b5") return "#f39c12"; // Orange
-        return "#f1f1f1"; // White
+        if (prevColor === "#f1f1f1") return "#3f51b5";
+        if (prevColor === "#3f51b5") return "#f39c12";
+        return "#f1f1f1";
       });
     }, 5000);
 
     return () => clearInterval(nameInterval);
   }, []);
 
-  // Change profile image every 6 seconds
-  useEffect(() => {
-    const imageInterval = setInterval(() => {
-      setCurrentImage((prevImage) => {
-        if (prevImage === "8.jpg") return "2.jpg";
-        if (prevImage === "2.jpg") return "6.jpg";
-        return "8.jpg";
-      });
-    }, 6000);
-
-    return () => clearInterval(imageInterval);
-  }, []);
-
   return (
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-content">
-          {/* Left Side: Profile Image */}
           <div className="image-container">
             <img
-              src={require(`./${currentImage}`)}
+              src={require("./6.jpg")}
               alt="Profile"
               className="profile-image"
             />
           </div>
-
-          {/* Right Side: Text Content */}
           <div className="text-content">
             <h1 className="intro-text">
               Hi, I’m <span className="name" style={{ color: nameColor }}>Kunj Khanpara</span>
