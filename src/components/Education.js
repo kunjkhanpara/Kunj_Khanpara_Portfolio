@@ -7,7 +7,7 @@ function Education() {
       degree: "B.Tech in Computer Engineering",
       institution: "Marwadi University, Rajkot, Gujarat",
       duration: "July 2021 - May 2025",
-      details: "CGPA: 6.1",
+      details: "CGPA: 6.5",
     },
     {
       degree: "12th Science",
