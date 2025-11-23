@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Experience from "./components/Experience";
+
 import Education from "./components/Education"; // Import Education
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/experience" element={<Experience />} />
+
         <Route path="/education" element={<Education />} /> {/* Added Education */}
       </Routes>
       <Footer />

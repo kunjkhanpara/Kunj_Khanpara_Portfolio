@@ -6,9 +6,12 @@ function Contact() {
   return (
     <div className="contact">
       <h2>Contact Me</h2>
+
       <p className="contact-description">
-        You can connect with me through the platforms below. Feel free to reach out anytime!
+        Feel free to reach out if you want to connect, collaborate, or have any questions.
+        I’m always open to new opportunities and conversations.
       </p>
+
       <div className="contact-links">
         <a
           href="mailto:kunjpatel4647@gmail.com"
@@ -19,6 +22,7 @@ function Contact() {
           <FaEnvelope className="contact-icon" />
           <span>kunjpatel4647@gmail.com</span>
         </a>
+
         <a
           href="https://github.com/kunjkhanpara"
           target="_blank"
@@ -28,6 +32,7 @@ function Contact() {
           <FaGithub className="contact-icon" />
           <span>GitHub</span>
         </a>
+
         <a
           href="https://www.instagram.com/kunj_khanpara_111/"
           target="_blank"
@@ -37,6 +42,7 @@ function Contact() {
           <FaInstagram className="contact-icon" />
           <span>Instagram</span>
         </a>
+
         <a
           href="https://www.linkedin.com/in/kunj-khanpara/"
           target="_blank"
@@ -46,6 +52,7 @@ function Contact() {
           <FaLinkedin className="contact-icon" />
           <span>LinkedIn</span>
         </a>
+
         <a
           href="tel:+919925424344"
           className="contact-link"

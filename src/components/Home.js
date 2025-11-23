@@ -1,32 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Home.css";
 
 function Home() {
-  const [role, setRole] = useState("Web Developer");
-  const [nameColor, setNameColor] = useState("#f1f1f1");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRole((prevRole) =>
-        prevRole === "Web Developer" ? "Software Developer" : "Web Developer"
-      );
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const nameInterval = setInterval(() => {
-      setNameColor((prevColor) => {
-        if (prevColor === "#f1f1f1") return "#3f51b5";
-        if (prevColor === "#3f51b5") return "#f39c12";
-        return "#f1f1f1";
-      });
-    }, 5000);
-
-    return () => clearInterval(nameInterval);
-  }, []);
-
   return (
     <div className="home-container">
       <div className="hero-section">
@@ -38,15 +13,22 @@ function Home() {
               className="profile-image"
             />
           </div>
+
           <div className="text-content">
             <h1 className="intro-text">
-              Hi, I’m <span className="name" style={{ color: nameColor }}>Kunj Khanpara</span>
+              Hi, I’m <span className="name">Kunj Khanpara</span>
             </h1>
+
             <h2 className="profession-text">
-              <span className="role-text">{role}</span>
+              <span className="role-text">MERN Stack Developer</span>
             </h2>
+
             <p className="description-text">
-              I am passionate about creating interactive and user-friendly web applications. My goal is to create digital experiences that are engaging and easy to use.
+              I’m a B.Tech Computer Engineering graduate with strong expertise
+              in modern web development. I specialize in building clean,
+              scalable, and user-friendly applications using React.js, Node.js,
+              and the MERN Stack. I enjoy solving real-world problems and
+              creating smooth, interactive digital experiences.
             </p>
           </div>
         </div>

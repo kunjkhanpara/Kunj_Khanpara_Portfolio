@@ -16,7 +16,7 @@ function Education() {
       details: "Percentage: 76%",
     },
     {
-      degree: "10th",
+      degree: "10th Standard",
       institution: "Shree Saraswati Science School, Porbandar, Gujarat",
       duration: "March 2019",
       details: "Percentage: 82%",
@@ -26,6 +26,7 @@ function Education() {
   return (
     <div className="education-page">
       <h1 className="education-title">Education</h1>
+
       <div className="education-container">
         {educationData.map((edu, index) => (
           <div className="education-card" key={index}>

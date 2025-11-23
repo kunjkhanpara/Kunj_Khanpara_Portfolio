@@ -5,7 +5,7 @@ import "./Projects.css";
 function Projects() {
   // Define the handleLiveLinkClick function
   const handleLiveLinkClick = (e, projectTitle) => {
-    e.preventDefault(); // Prevent the default behavior (opening the link in a new tab)
+    e.preventDefault();
     if (projectTitle === "Digital Resume Builder") {
       alert("Live website not available for this project, but I will update soon.");
     }
@@ -15,6 +15,19 @@ function Projects() {
     <div className="projects">
       <h2>My Projects</h2>
       <div className="project-list">
+
+        {/* Image Resizer - NEW */}
+        <ProjectCard
+          title="Image Resizer"
+          points={[
+            "Fast, high-quality image resizing & compression tool",
+            "Resize by MB/KB or custom dimensions with batch support",
+            "100% client-side, secure, with light/dark theme"
+          ]}
+          githubLink="https://github.com/kunjkhanpara/Image-Resizer"
+          liveLink="https://kunjkhanpara.github.io/Image-Resizer/"
+        />
+
         <ProjectCard
           title="Instagram Unfollower Tracker"
           points={[
@@ -25,6 +38,7 @@ function Projects() {
           githubLink="https://github.com/kunjkhanpara/Instagram_Unfollower_Tracker"
           liveLink="https://kunjkhanpara.github.io/Instagram_Unfollower_Tracker/"
         />
+
         <ProjectCard
           title="Digital Resume Builder"
           points={[
@@ -36,6 +50,7 @@ function Projects() {
           liveLink="#"
           onClickLiveLink={(e) => handleLiveLinkClick(e, "Digital Resume Builder")}
         />
+
         <ProjectCard
           title="Tic-Tac-Toe-Game"
           points={[
@@ -46,6 +61,7 @@ function Projects() {
           githubLink="https://github.com/kunjkhanpara/Tic-Tac-Toe-Game"
           liveLink="https://kunjkhanpara.github.io/Tic-Tac-Toe-Game/"
         />
+
         <ProjectCard
           title="Weather-Application-Using-API-Key"
           points={[
@@ -56,16 +72,18 @@ function Projects() {
           githubLink="https://github.com/kunjkhanpara/Weather-Application-Using-API-Key"
           liveLink="https://kunjkhanpara.github.io/Weather-Application-Using-API-Key/"
         />
+
         <ProjectCard
           title="Shopping-Cart"
           points={[
-            "Add, edit, or remove items in the cart.",
+            "Add, edit, or remove items in the cart",
             "Supports custom items with dynamic pricing",
             "View total price instantly"
           ]}
           githubLink="https://github.com/kunjkhanpara/Shopping-Cart"
           liveLink="https://kunjkhanpara.github.io/Shopping-Cart/"
         />
+
       </div>
     </div>
   );

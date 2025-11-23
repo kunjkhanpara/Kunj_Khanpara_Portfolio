@@ -5,10 +5,17 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <div className="image-container">
-        <img src={require("./25.jpg")} alt="Resume" className="zoomable-image" />
+        <img 
+          src={require("./Kunj-Khanpara-Resume_page-0001.jpg")} 
+          alt="Resume" 
+          className="zoomable-image" 
+        />
       </div>
+
       <a
-        href="https://drive.google.com/file/d/1O15M_6qmNJJyxph8eCvwJyDR_D-i4fqY/view?usp=sharing"
+        href="https://drive.google.com/file/d/1vD4ulI-nD2S8H3pBEVtnT1UWSd8oq0Qs/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
         className="download-btn"
       >
         Download Resume
